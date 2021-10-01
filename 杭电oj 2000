@@ -1,0 +1,33 @@
+ #include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char a, b, c, t;
+    while (scanf_s("%c%c%c", &a, &b, &c) != EOF)
+    {
+        getchar();
+        if (a > b)
+        {
+            t = a;
+            a = b;
+            b = t;
+        }
+        if (a > c)
+        {
+            t = a;
+            a = c;
+            c = t;
+        }
+        if (b > c)
+        {
+            t = b;
+            b = c;
+            c = t;
+        }
+        printf("%c %c %c\n", a, b, c);
+    }
+
+}
+//本地莫名奇妙报错，杭电oj可通过
+//getchar （）暂时懂 ，!=EOF已经会用了
