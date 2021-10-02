@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main (){
+	double a,b;
+	while (scanf("%lf",&a)!=EOF){
+		if (a<0){
+			b = -a;
+			printf ("%.2lf\n",b);
+		}
+		else {
+			printf ("%.2lf\n",a);
+		}
+	}
+
+} 
+//遇到格式错误就加\n，总之就是好使
