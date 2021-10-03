@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main ()
+{
+	
+	int a[10000];
+	int i;
+	int n; 
+	int b = 1;
+	while (scanf("%d",&n)!=EOF)
+	{
+		for(i=0;i<n;i++)
+		{
+			scanf("%d",&a[i]);
+		}
+	     for(i=0;i<n;i++)
+		 {
+	     	if(a[i]%2!=0)
+			 {
+			 	b=b*a[i];
+			 }
+	     	
+		 } 
+	printf("%d\n",b);
+	b = 1;
+	}
+	
+}
+//非常激动的是这一次的代码是我自己写出来的，没有看其他人的答案
+//当然写完之后看到了一个老哥想法和我相似，不过他的那个代码有Bug
