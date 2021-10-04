@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int m;
+    while(scanf("%d", &m) != EOF){
+        while(m--){
+            int n;
+            double ans = 0;
+            scanf("%d", &n);
+            for(int i=1; i <= n; i++)
+            {
+                ans += pow(-1, i+1) * (1.0 / i);
+            }
+            printf("%.2f\n", ans);
+        }
+        
+    }
+    return 0;
+    
+}
+//不懂这个while(m--)是干嘛用的
+少了这个while(m--)就会少一个输出值
